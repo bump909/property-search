@@ -1,35 +1,45 @@
-# Simple Search 
+# Simple Property Search
 
-## Task
-When given data sets to work with, we are required to produce applications which search and return refined data sets.
-This is a simple search facility with pagination of the data sets provided.
+## Overview
 
-The search is to do allow the matching of the following:
-	•	location with exact and partial naming matches;
-	•	near the beach;
-	•	accepts pets;
-	•	sleeps (minimum);
-	•	beds (minimum);
-	•	availability.
+This project demonstrates a basic search functionality with pagination over a given dataset.  
+The application allows users to filter and refine search results based on specific criteria.
 
-## Notes:
-	•	It is simply a search facility.
-	•	The results are paginated.
-	•	This isn’t a web design
-	•	Adopts an OOP approach.
+### Search Features
 
-## Install notes
+The search supports:
 
-- This test was created using Laravel 8
-- to install locally (on mac OS using valet)
-- Open Terminal
-- Navigate to folder
-- composer install
-- import properties.sql into MySQL
-- edit .env database settings to suit
-- open browser
-- git url property-search.test
+- Exact and partial matches for **location**.
+- Filtering by **proximity to the beach**.
+- Filtering for **pet-friendly** properties.
+- Minimum number of **sleeps**.
+- Minimum number of **beds**.
+- **Availability** checking.
+
+### Key Points
+
+- Focused purely on search functionality.
+- Results are **paginated**.
+- No front-end web design; functionality over appearance.
+- Built following **Object-Oriented Programming (OOP)** principles.
+
+## Installation
+
+This project was built using **Laravel 8**.  
+To set it up locally (example: macOS using Laravel Valet):
+
+1. Open Terminal.
+2. Navigate to the project folder.
+3. Run `composer install`.
+4. Import the provided `properties.sql` file into your MySQL database.
+5. Update your `.env` file with your local database credentials.
+6. Access the project in your browser via your Valet domain (e.g., `http://property-search.test`).
 
 ## Testing
-- The are a number of unit tests located at tests/Feature/PropertySearchTest.php
 
+- Unit tests are located in `tests/Feature/PropertySearchTest.php`.
+- To run the tests, use:
+
+  ```bash
+  php artisan test
+  ```
